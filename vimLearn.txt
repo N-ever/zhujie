@@ -1,0 +1,91 @@
+Vim filename
+up k down j left h right l
+i insert left
+ :set showmode
+Esc return normal
+delete one word x
+delete one line dd
+merge two line into one line J
+back u
+back back CTRL+R
+back one line U
+back back one line U U
+a insert right
+o start a new line below and into insert mode
+O start a new line above and into insert mode
+k goto one line above
+number + command times
+ZZ exit and store
+:q! exit cancel all edit
+:e! redo txt
+:help help
+:help i_CTRL-H insert mode CTRL-H 
+w move to next word first char
+b move to past word first char
+e move to next word last char
+ge move to past word last char
+^ move to the first word
+$ move to the last word
+f+* find the next *
+F+* find the last *
+t+* find the next * before
+T+* find the next * before
+; redo last command
+, redo nege last command
+% goto (){}[]
+num + G goto num line
+G goto last line
+gg goto first line
+num+% goto file 
+H M L goto file
+CTRL+G info line
+:set number/nonumber
+:set ruler set rightbottom
+CTRL+U goto half page up
+CTRL+D goto half page down
+CTRL+E roll to next line
+CTRL+Y roll to last line
+CTRL+F roll to last page 
+CTRL+F roll to next page
+zz roll to mid screen
+zt roll to top screen
+zb roll to bottom screen
+/+words search 
+n next search word
+*[]^%/?~$ need \
+? search word from end
+N search word nege last search
+:set ignorecase 
+* serach word
+\<word\> search for word
+g* search for other words
+:set hlsearch
+/word$ search last word is word
+/^word search first word is word
+. any word
+`` return to last tag
+CTRL+I goto newer tag
+CTRL+O goto older tag
+m+a-z mark 
+`+a-z goto mark 
+' " [ ] mark
+. redo last command
+is iw not include block
+as aw include block
+qa-z .....q @a-z
+:g+condition+s/a/b/g
+:split
+CTRL+v Istring
+CTRL+v > move a shift
+CTRL+v Astring 
+CTRL+v rx
+"a-z y register "a-z p
+CTRL+w hjklbt
+vimdiff main.c~ main.c
+CTRL+v : range
+CTRL+v u U ~
+:0/$read patch
+:.,$write patch
+\<word\>
+g CTRL+g count words
+
