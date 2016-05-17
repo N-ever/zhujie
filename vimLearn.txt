@@ -92,3 +92,5 @@ g CTRL+g count words
 :r !ls read ls
 :r !dir read dir
 CTRL+v + SHIFT+v all select
+vimdiff file1 file2  find diff
+CTRL+w+-/+  CTRL+w split change
