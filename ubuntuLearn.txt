@@ -2,4 +2,4 @@ echo "" > file.txt                  txt的创建和内容放入
 rm file                             删除文件
 mv file                             重命名文件
 vi file                             查看文件
-
+rm -rf dir                          删除文件夹
