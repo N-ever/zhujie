@@ -1,0 +1,24 @@
+git init                        初始化
+git add file                    添加到暂存区
+git commit -m "注释"            提交
+git log                         提交列表
+git log --pretty=oneline        提交列表一行显示
+git reset --hard hashcode       返回之前的状态删除之间的
+git checkout -b dev hashcode    切换到另一dev分支，并返回到之前的状态
+git checkout -- file            撤销工作区不同的操作
+git checkout :/"注释"           撤销到某个
+git checkout master~5           撤销到主分支前5个
+git diff                        到上次提交之间的修改
+git diff "@{yesterday}"         和昨天相比修改的
+git diff hashcode "master"      maseter和某个特定版本相比修改的
+git whatchanged --since=“2 days ago” 查看从两天前到现在的版本
+git revert HEAD                 撤销某一次提交这次提交的内容返回上一个版本
+git merge dev                   合并分支
+git branch -d dev               删除分支
+git branch -m master dev        重命名master为dev
+git branch master HEAD~1        以1次前提交一个新的master分支
+git commit --amend              运行add 再运行提交一个新的文件
+git commit --amend -a           增加更多到上次的提交
+git diff >patch                 把生成的补丁放进patch
+git apply <patch                把补丁patch 打上
+
