@@ -88,4 +88,7 @@ CTRL+v u U ~
 :.,$write patch
 \<word\>
 g CTRL+g count words
-
+:w !wc count 
+:r !ls read ls
+:r !dir read dir
+CTRL+v + SHIFT+v all select
