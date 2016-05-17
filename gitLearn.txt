@@ -21,4 +21,19 @@ git commit --amend              运行add 再运行提交一个新的文件
 git commit --amend -a           增加更多到上次的提交
 git diff >patch                 把生成的补丁放进patch
 git apply <patch                把补丁patch 打上
+git stash                       放入寄存区 
+git stash list                  查看stash列表
+git stash apply stash@{num}     提取stash
+git stash pop                   提取最顶层的stash
+git st .   git status 
+git log  git lg
+git branch  git br
+git diff --cached               查看不同
+git clone name@IP：～/file      克隆别人电脑的文件
+cd                              直接到本地的home
+CTRL+C                          取消指令
+git fetch                       更新到本地
+git merge                       合并
+git pull                        更新到本地并合并
+git push                        更新到远程
 
