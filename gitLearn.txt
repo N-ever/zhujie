@@ -5,7 +5,7 @@ git log                         提交列表
 git log --pretty=oneline        提交列表一行显示
 git reset --hard hashcode       返回之前的状态删除之间的
 git checkout -b dev hashcode    切换到另一dev分支，并返回到之前的状态
-git checkout -- file            撤销工作区不同的操作
+git checkout -- file            撤销工作区不同的操作暂存区覆盖工作区
 git checkout :/"注释"           撤销到某个
 git checkout master~5           撤销到主分支前5个
 git diff                        到上次提交之间的修改
@@ -35,4 +35,34 @@ CTRL+C                          取消指令
 git fetch                       更新到本地
 git merge                       合并
 git pull                        更新到本地并合并
-it push                        更新到远程
+it push                         更新到远程
+git add -u                      将所有修改过的文件放入
+git add -A                      将删除或者新增的文件放入缓存区
+-m                              提示说明
+git config --global alias.xx xxxx 设置快捷
+git config -e --global          编辑global
+git config -e 
+git config -e --system
+git clone file1 file2           备份file1到file2
+git dh                          工作区和HEAD做比较
+git diff                        暂存区和工作区做比较
+git dc                          暂存区和版本库的比较
+git clean -fd                   清除不在暂存区的文件
+git reset --hard master@{2}     重置master 两次改变之前的值
+git reset -- filename  git reset HEAD filename git reset          git add 的反向操作 把文件撤出暂存区
+git checkout branch -- filename branch中的提交中的filename 直接覆盖暂存区和工作区的文件
+git clean                       删除没有git add 的文件和目录
+-n 显示将要删除的文件和目录 -f 删除文件 -df 删除文件和目录
+git tag 
+git reset --soft hashcode
+git rebase --onto C D F         没有D 
+git add .....
+git rebase --continue
+git clone path path  --bare     裸库没有工作区
+git clone --mirror path path    克隆
+git pull = git fetch+git merge
+git remote add name path (path)
+git pull name branchname 
+git tag -a V1.3 -m "版本1.3"    附注标签显示详细
+git tag name hashcode           轻量标签
+

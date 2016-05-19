@@ -3,3 +3,6 @@ rm file                             删除文件
 mv file                             重命名文件
 vi file                             查看文件
 rm -rf dir                          删除文件夹
+shift+ctrl+t                        多开标签terminal
+alt+1.2.3 pageup pagedown           切换标签
+
