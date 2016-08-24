@@ -19,7 +19,7 @@ ZZ exit and store
 :q! exit cancel all edit
 :e! redo txt
 :help help
-:help i_CTRL-H insert mode CTRL-H 
+:help i_CTRL-H insert mode CTRL-H
 w move to next word first char
 b move to past word first char
 e move to next word last char
@@ -36,7 +36,7 @@ T+* find the next * before
 num + G goto num line
 G goto last line
 gg goto first line
-num+% goto file 
+num+% goto file
 H M L goto file
 CTRL+G info line
 :set number/nonumber
@@ -45,17 +45,17 @@ CTRL+U goto half page up
 CTRL+D goto half page down
 CTRL+E roll to next line
 CTRL+Y roll to last line
-CTRL+F roll to last page 
+CTRL+F roll to last page
 CTRL+F roll to next page
 zz roll to mid screen
 zt roll to top screen
 zb roll to bottom screen
-/+words search 
+/+words search
 n next search word
 *[]^%/?~$ need \
 ? search word from end
 N search word nege last search
-:set ignorecase 
+:set ignorecase
 * serach word
 \<word\> search for word
 g* search for other words
@@ -66,8 +66,8 @@ g* search for other words
 `` return to last tag
 CTRL+I goto newer tag
 CTRL+O goto older tag
-m+a-z mark 
-`+a-z goto mark 
+m+a-z mark
+`+a-z goto mark
 ' " [ ] mark
 . redo last command
 is iw not include block
@@ -77,7 +77,7 @@ qa-z .....q @a-z
 :split
 CTRL+v Istring
 CTRL+v > move a shift
-CTRL+v Astring 
+CTRL+v Astring
 CTRL+v rx
 "a-z y register "a-z p
 CTRL+w hjklbt
@@ -88,7 +88,7 @@ CTRL+v u U ~
 :.,$write patch
 \<word\>
 g CTRL+g count words
-:w !wc count 
+:w !wc count
 :r !ls read ls
 :r !dir read dir
 CTRL+v + SHIFT+v all select

@@ -21,11 +21,11 @@ git commit --amend              运行add 再运行提交一个新的文件
 git commit --amend -a           增加更多到上次的提交
 git diff >patch                 把生成的补丁放进patch
 git apply <patch                把补丁patch 打上
-git stash                       放入寄存区 
+git stash                       放入寄存区
 git stash list                  查看stash列表
 git stash apply stash@{num}     提取stash
 git stash pop                   提取最顶层的stash
-git st .   git status 
+git st .   git status
 git log  git lg
 git branch  git br
 git diff --cached               查看不同
@@ -41,7 +41,7 @@ git add -A                      将删除或者新增的文件放入缓存区
 -m                              提示说明
 git config --global alias.xx xxxx 设置快捷
 git config -e --global          编辑global
-git config -e 
+git config -e
 git config -e --system
 git clone file1 file2           备份file1到file2
 git dh                          工作区和HEAD做比较
@@ -53,16 +53,15 @@ git reset -- filename  git reset HEAD filename git reset          git add 的反
 git checkout branch -- filename branch中的提交中的filename 直接覆盖暂存区和工作区的文件
 git clean                       删除没有git add 的文件和目录
 -n 显示将要删除的文件和目录 -f 删除文件 -df 删除文件和目录
-git tag 
+git tag
 git reset --soft hashcode
-git rebase --onto C D F         没有D 
+git rebase --onto C D F         没有D
 git add .....
 git rebase --continue
 git clone path path  --bare     裸库没有工作区
 git clone --mirror path path    克隆
 git pull = git fetch+git merge
 git remote add name path (path)
-git pull name branchname 
+git pull name branchname
 git tag -a V1.3 -m "版本1.3"    附注标签显示详细
 git tag name hashcode           轻量标签
-
